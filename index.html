@@ -9,21 +9,95 @@
  <style>
    body {
      font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+     background: url(images/stu.jpg);
+     Background-size:contain;
+   }
+
+  .description {
+  font-style: italic;
+  font-weight: 200;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
    }
 
    label {
      font-size: 18px;
+     font-weight: 600;
      display: block;
-     padding-bottom: 10%;
+     padding-top: 10px;
+     padding-bottom: 10px;
    }
 
    input {
      display: block;
+     padding: 10px;
+     font-size: 17px;
+     border-radius: 10px;
+     border: 2px solid green;
+   }
+
+   input:focus {
+    outline-color:#FF0;
+   }
+
+   .fields {
+    width: 100%;
    }
 
    div {
+     width: 50%;
      margin: auto;
+     border-radius: 10px;
    }
+
+   .block-one{
+     display: block;
+     text-align: center;
+     padding-top: 5%;
+     padding-bottom: 2%;
+     color: rgb(235, 189, 121);
+   }
+
+   h1 {
+     font-size: 3rem;
+   }
+
+  .block-two {
+    background-color: rgb(174, 211, 12);
+    padding: 60px;
+   }
+
+   select {
+    display: block;
+     padding: 10px;
+     font-size: 17px;
+     border-radius: 10px;
+     border: 2px solid green;
+   }
+
+   select:focus {
+    outline-color:#FF0;
+   }
+
+   input[type="radio"], input[type="checkbox"] {
+     display: inline-block;
+     margin-right: 10px;
+   }
+
+   
+   textarea {
+  width: 680px;
+  height: 150px;
+  font-size: 17px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid green;
+  }
+
+  textarea:focus {
+    outline-color:#FF0;
+  }
+
  </style>
 
 </head>
@@ -31,22 +105,23 @@
 <body>
   <div class="block-one">
     <h1 id="title">Survey Form</h1>
-      <p id="description">Tell me about your preference as a sound engineer</p>
+      <p id="description" class="description">Tell me about your preference as a sound engineer</p>
   </div>
 
   <div class="block-two">
     <form id="survey-form"> 
+      <section >
       <label for="name" id="name-label">Name:</label>
-        <input type="name" name="name" id="name" placeholder="Enter your name" required><br>
+        <input type="name" name="name" id="name" placeholder="Enter your name" class="fields" required><br>
       
       <label id="email-label">Email:</label>
-        <input type="email" name="email" id="email" placeholder="Enter your mail" required><br>
+        <input type="email" name="email" id="email" placeholder="Enter your mail" class="fields" required><br>
       
 
       <label id="number-label">Age:</label>
-        <input type="number" name="number" id="number" placeholder="Age" min="1" max="50"><br>
+        <input type="number" name="number" id="number" placeholder="Age" min="1" max="50" class="fields"><br>
+      </section>
         
-        <!--For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label"-->
 
       <label for="studio-monitors">Which option packs your favorite sound?</label><br>
         <select name="studio-monitors" id="dropdown">
@@ -75,7 +150,7 @@
           <br>
 
         <label for="studio-monitors">Any additional comments?</label><br>
-        <textarea placeholder="Additional comments"></textarea>
+        <textarea placeholder="Additional comments" cols="30" rows="10"></textarea>
         <br>
 
           <input type="submit" value="submit" id="submit">
