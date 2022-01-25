@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Survey Form</title>
-  
+
  <style>
    body {
      font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -15,56 +15,58 @@
 </head>
 
 <body>
-  <h1 id="title">Survey Form</h1>
-
+  <div>
+    <h1 id="title">Survey Form</h1>
       <p id="description">Tell me about your preference as a sound engineer</p>
-
-  <form id="survey-form"> 
-    <label for="name" id="name-label">Name:</label>
-      <input type="name" name="name" id="name" placeholder="Enter your name" required><br>
-    
-    <label id="email-label">Email:</label>
-      <input type="email" name="email" id="email" placeholder="Enter your mail" required><br>
-    
-
-    <label id="number-label">Age:</label>
-      <input type="number" name="number" id="number" placeholder="Age" min="1" max="50"><br>
+  </div>
+  
+  <div>
+    <form id="survey-form"> 
+      <label for="name" id="name-label">Name:</label>
+        <input type="name" name="name" id="name" placeholder="Enter your name" required><br>
       
-      <!--For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label"-->
+      <label id="email-label">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your mail" required><br>
+      
 
-    <label for="studio-monitors">Which option packs your favorite sound?</label><br>
-      <select name="studio-monitors" id="dropdown">
-        <option value="krk">KRK Rokit 5 G3</option>
-        <option value="yamaha">Yamaha HS8</option>
-        <option value="event">Event 20/20 BAS</option>
-        <option value="dynaudio">Dynaudio LYD5</option>
-        <option value="mackie">Mackie HR824 mkII</option>
-        <option value="adam">Adam Audio A7X</option>
-        <option value="genelec">Genelec 8010</option>
-        <option value="focal">Focal Twin6 Be</option>
-        <option value="avantone">Avantone Mix Cubes</option>
-      </select>
-      <br>
-
-      <label for="studio-monitors">Would you recommend this studio monitor?</label><br>
-        <input type="radio" id="html" name="fav_language" value="definitely"> Definitely
-        <input type="radio" id="css" name="fav_language" value="maybe"> Maybe
-        <input type="radio" id="javascript" name="fav_language" value="not sure"> Not sure <br>
+      <label id="number-label">Age:</label>
+        <input type="number" name="number" id="number" placeholder="Age" min="1" max="50"><br>
         
+        <!--For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label"-->
 
-      <label for="studio-monitors">What's your favorite feature from this studio monitor?</label><br>
-        <input type="checkbox" id="frequency1" name="frequency1" value="Highs"> Highs
-        <input type="checkbox" id="frequency2" name="frequency2" value="Mids"> Mids
-        <input type="checkbox" id="frequency3" name="frequency3" value="Lows"> Lows
+      <label for="studio-monitors">Which option packs your favorite sound?</label><br>
+        <select name="studio-monitors" id="dropdown">
+          <option value="krk">KRK Rokit 5 G3</option>
+          <option value="yamaha">Yamaha HS8</option>
+          <option value="event">Event 20/20 BAS</option>
+          <option value="dynaudio">Dynaudio LYD5</option>
+          <option value="mackie">Mackie HR824 mkII</option>
+          <option value="adam">Adam Audio A7X</option>
+          <option value="genelec">Genelec 8010</option>
+          <option value="focal">Focal Twin6 Be</option>
+          <option value="avantone">Avantone Mix Cubes</option>
+        </select>
         <br>
 
-      <label for="studio-monitors">Any additional comments?</label><br>
-      <textarea placeholder="Additional comments"></textarea>
-      <br>
+        <label for="studio-monitors">Would you recommend this studio monitor?</label><br>
+          <input type="radio" id="html" name="fav_language" value="definitely"> Definitely
+          <input type="radio" id="css" name="fav_language" value="maybe"> Maybe
+          <input type="radio" id="javascript" name="fav_language" value="not sure"> Not sure <br>
+          
 
-        <input type="submit" value="submit" id="submit">
-  </form>
+        <label for="studio-monitors">What's your favorite feature from this studio monitor?</label><br>
+          <input type="checkbox" id="frequency1" name="frequency1" value="Highs"> Highs
+          <input type="checkbox" id="frequency2" name="frequency2" value="Mids"> Mids
+          <input type="checkbox" id="frequency3" name="frequency3" value="Lows"> Lows
+          <br>
 
+        <label for="studio-monitors">Any additional comments?</label><br>
+        <textarea placeholder="Additional comments"></textarea>
+        <br>
+
+          <input type="submit" value="submit" id="submit">
+    </form>
+</div>
   <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
   </script>
 </body>
