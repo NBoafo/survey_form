@@ -4,143 +4,138 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" src="style.css">
   <title>Survey Form</title>
   
 
- <!--<style>
-   body {
-     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-     background: url(images/stu.jpg);
-     Background-size:contain;
-   }
+  <style>
+    body {
+      font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+      background: url(images/stu.jpg);
+      Background-size:contain;
+    }
 
-  .description {
-  font-style: italic;
-  font-weight: 200;
-  font-size: 20px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-   }
+    .description {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    }
 
-   label {
-     font-size: 18px;
-     font-weight: 500;
-     color: white;
-     display: block;
-     padding-top: 20px;
-     margin-bottom: 15px;
-   }
+    label {
+      font-size: 18px;
+      font-weight: 500;
+      color: white;
+      display: block;
+      padding-top: 20px;
+      margin-bottom: 15px;
+    }
 
-   input {
-     display: block;
-     padding: 10px;
-     font-size: 17px;
-     border-radius: 10px;
-     border: 2px solid green;
-   }
+    input {
+      display: block;
+      padding: 10px;
+      font-size: 17px;
+      border-radius: 10px;
+      border: 2px solid green;
+    }
 
-   input:focus {
-    outline-color:#FF0;
-   }
+    input:focus {
+      outline-color:#FF0;
+    }
 
-   .fields {
+    .fields {
+      width: 100%;
+    }
+
+    div {
+      width: 50%;
+      margin: auto;
+      border-radius: 10px;
+    }
+
+    .block-one{
+      display: block;
+      text-align: center;
+      padding-top: 5%;
+      padding-bottom: 2%;
+      color: rgb(235, 189, 121);
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .block-two {
+      background-color: rgba(255, 156, 26, 0.377);
+      padding: 60px;
+    }
+
+    select {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 17px;
+      border-radius: 10px;
+      border: 2px solid green;
+      margin-top: -15px;
+    }
+
+    select:focus {
+      outline-color:#FF0;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+      display: inline;
+      margin-right: 10px;
+      margin-bottom: 15px;
+      transform: scale(2);
+    }
+
+    .radio-text, .checkbox-text {
+      font-size: 17px;
+      color: white;
+      font-weight: 500;
+    }
+    
+    
+    textarea {
     width: 100%;
-   }
+    height: 150px;
+    font-size: 17px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid green;
+    }
 
-   div {
-     width: 50%;
-     margin: auto;
-     border-radius: 10px;
-   }
+    textarea:focus {
+      outline-color:#FF0;
+    }
 
-   .block-one{
-     display: block;
-     text-align: center;
-     padding-top: 5%;
-     padding-bottom: 2%;
-     color: rgb(235, 189, 121);
-   }
+    .submit {
+      display: block;
+      width: 100%;
+      background-color: green;
+      color: white;
+      font-size: 18px;
+      font-weight: 600;
+    }
 
-   h1 {
-     font-size: 3rem;
-   }
+    .submit:hover {
+      outline-color:#FF0;
+    }
 
-  .block-two {
-    background-color: rgba(255, 156, 26, 0.377);
-    padding: 60px;
-   }
-
-   select {
-     display: block;
-     width: 100%;
-     padding: 10px;
-     font-size: 17px;
-     border-radius: 10px;
-     border: 2px solid green;
-     margin-top: -15px;
-   }
-
-   select:focus {
-    outline-color:#FF0;
-   }
-
-   input[type="radio"], input[type="checkbox"] {
-     display: inline;
-     margin-right: 10px;
-     margin-bottom: 15px;
-     transform: scale(2);
-   }
-
-   .radio-text, .checkbox-text {
-     font-size: 17px;
-     color: white;
-     font-weight: 500;
-   }
-
-   
-   
-   
-   textarea {
-  width: 100%;
-  height: 150px;
-  font-size: 17px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  border: 2px solid green;
+    
+    @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
   }
 
-  textarea:focus {
-    outline-color:#FF0;
+    @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
   }
-
-  .submit {
-    display: block;
-    width: 100%;
-    background-color: green;
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-  }
-
-  .submit:hover {
-    outline-color:#FF0;
-  }
-
-  
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
- </style> -->
-
+  </style>
 </head>
 
 <body>
@@ -178,15 +173,21 @@
         <br>
 
         <label for="studio-monitors">Would you recommend this studio monitor?</label><br>
-          <input type="radio" id="html" name="fav_language" value="definitely"> <span class="radio-text">Definitely</span>
-          <input type="radio" id="css" name="fav_language" value="maybe"> <span class="radio-text">Maybe</span>
-          <input type="radio" id="javascript" name="fav_language" value="not sure"> <span class="radio-text">Not sure</span> <br>
+          <input type="radio" id="html" name="fav_language" value="definitely"> 
+          <span class="radio-text">Definitely</span>
+          <input type="radio" id="css" name="fav_language" value="maybe"> 
+          <span class="radio-text">Maybe</span>
+          <input type="radio" id="javascript" name="fav_language" value="not sure"> 
+          <span class="radio-text">Not sure</span> <br>
           
 
         <label for="studio-monitors">What's your favorite feature from this studio monitor?</label><br>
-          <input type="checkbox" id="frequency1" name="frequency1" value="Highs"> <span class="radio-text">Highs</span>
-          <input type="checkbox" id="frequency2" name="frequency2" value="Mids"> <span class="radio-text">Mids</span>
-          <input type="checkbox" id="frequency3" name="frequency3" value="Lows"> <span class="radio-text">Lows</span>
+          <input type="checkbox" id="frequency1" name="frequency1" value="Highs"> 
+          <span class="radio-text">Highs</span>
+          <input type="checkbox" id="frequency2" name="frequency2" value="Mids"> 
+          <span class="radio-text">Mids</span>
+          <input type="checkbox" id="frequency3" name="frequency3" value="Lows"> 
+          <span class="radio-text">Lows</span>
           <br>
 
         <label for="studio-monitors">Any additional comments?</label><br>
@@ -196,6 +197,7 @@
           <input type="submit" value="submit" id="submit" class="submit">
     </form>
 </div>
+
   <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
   </script>
 </body>
